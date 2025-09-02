@@ -3,7 +3,7 @@ import sqlite3
 from datetime import datetime
 
 app = Flask(__name__)
-
+CORS(app)
 @app.route('/track_click')
 def track_click():
     """Handle tracking URL clicks"""
