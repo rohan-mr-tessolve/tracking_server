@@ -1,7 +1,7 @@
 from flask import Flask, request, redirect, jsonify
 import sqlite3
 from datetime import datetime
-
+from curses import COLS
 app = Flask(__name__)
 CORS(app)
 @app.route('/track_click')
